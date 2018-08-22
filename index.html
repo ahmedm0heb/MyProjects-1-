@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+
+		<!-- fontawesome cdn -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+
+
+	</head>
+
+	<body onload="setTimeout(onLoading,1000)">
+		<div class="content" >
+
+			<!--Header -->
+			<header>
+					<h1>My Resume</h1>
+			</header>
+
+			<!-- NavBar -->
+			<nav>
+				
+				<ul>
+					<li><a href="#"><i class="fa fa-fw fa-home"></i>Home</a></li>
+					<li><a href="#skills"><i class="fas fa-brain"></i>My Skills</a></li>
+					<li><a href="#contactMe"><i class="fa fa-fw fa-envelope"></i>Contact Me!</a></li>
+				</ul>
+			</nav>
+
+			<!--Main -->
+			<main>
+				<section class="sec-head">
+					<h2 class="h2-head">i'm Ahmed Moheb I work as </h2>
+					<div  id="pContent"  class="hidden">
+						<p>Front-End,</p>
+						<p>Back-End,</p>
+						<p>Full-Stack Developer</p>
+						<br>
+						<button type="button"><a href="#skil">See More</a></button>
+					</div>
+				</section>
+			</main>
+
+			<!--article -->
+			<article>
+
+				<section class="sec-art1" id="skil">
+					
+					<div class="icons">
+						<i class="fas fa-chalkboard-teacher fa-5x"></i>
+						<h2 class="h2-art" id="skills">I Could work as a Front-End</h2>
+						<p class="p-art">working as a front end and do layout and using css3 with html5 by motion by javascript</p>
+					</div>
+					
+					
+					
+				</section>
+
+				<section class="sec-art2">
+
+					<div class="icons">
+						<i class="fas fa-server fa-5x"></i>
+						<h2 class="h2-art" id="skills">I Could word as a Front-End</h2>
+						<p class="p-art">working as a front end and do layout and using css3 with html5 by motion by javascript
+						</p>
+					</div>
+
+
+					
+				</section>
+
+				<section class="sec-art3">
+					
+					<div class="icons">
+						<i class="fas fa-server fa-5x"></i>
+						<h2 class="h2-art" id="skills">I Could word as a Front-End</h2>
+						<p class="p-art">working as a front end and do layout and using css3 with html5 by motion by javascript
+						</p>
+					</div>
+
+					
+				</section>
+
+			</article>
+
+			<!--Aside -->
+			<aside>
+					<label>Contact me</label>
+					<a onclick="Contact()"><i class="fas fa-phone fa-2x"></i></a>
+				<div id="containerForm"  class="hidden" >
+					<form id="contactMe">
+						<label>Name</label>
+						<input type="text" id="flname" name="name" placeholder="your name ..">
+
+						<label>email</label>
+						<input type="email" id="email" name="mail" placeholder="your email ..">
+						<label>Subject</label>
+						<textarea id="subject" name="subject" placeholder="Write something .  . ." style="height: 100px">
+						</textarea>
+						<input type="submit" value="submit">
+					
+					</form>
+				</div>
+			</aside>
+
+			<!-- Footer -->
+			<footer>
+				<p class="p-footer">all right reversed &copy;</p>
+			</footer>
+		</div>
+		<script src="js/fontawesome.min.js"></script>
+		<script type="text/javascript" src="js/plugins.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,267 @@
+html
+{
+	background-image: url(../images/cover.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	min-height: 1200px;
+	overflow-x:  hidden;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.content
+{
+	display: grid;
+	grid-template-areas: 
+	"header nav nav nav"
+	"main main main main"
+	"article article article aside"
+	"footer footer footer footer"
+
+}
+
+
+/* Header */
+header h1
+{
+	color: white;
+	font-size: 3em;
+	font-variant: small-caps;
+	font-family: Arial
+}
+
+
+
+/* NavBar */
+nav
+{
+	grid-area:nav;
+}
+nav ul 
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* style */
+	list-style: none;
+	margin-top: 30px
+}
+nav ul li:nth-child(1)
+{
+	flex:1 0 40px; 
+}
+nav ul li:nth-child(2)
+{
+	flex:1 0 40px;
+}
+nav ul li:nth-child(3)
+{
+	flex:1 0 40px;
+}
+
+nav ul li
+{
+	padding: 5px
+}
+nav ul li a 
+{
+	text-decoration: none;
+	color:white;
+	font-size:30px;
+}
+nav ul li a:hover
+{
+	color:#ccc;
+}
+
+
+/* MAIN */
+main
+{
+	grid-area: main;
+	width: 100%;
+	margin: 100px auto;
+	height: 300px;
+	background: rgba(195,221,84,.66);
+	display: grid;
+	justify-content: center;
+	position: relative;
+}
+main h2
+{
+	color:white;
+	font-size: 40px
+}
+div #pContent
+{
+	font-size: 25px;
+	color:white;
+
+}
+.hidden 
+{
+	opacity: 0
+}
+#pContent 
+{
+	transition: all 3s ease;
+	text-align: center
+}
+#pContent p
+{
+	display: inline-block;
+}
+#pContent button
+{
+	background: #a9a842;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 10px 10px 10px 0px;
+    border: none;
+    box-shadow: 15px 12px 10px olivedrab; 
+    cursor: pointer;
+
+}
+#pContent button a
+{
+	color: #080;
+	text-decoration: none;
+	color:white;
+
+}
+#pContent button:hover
+{
+    transition: all .5s ease-out ;
+    padding: 3px
+}
+ 
+
+ /* start article */
+article
+{
+	grid-area: article;
+	display: flex;
+	width: 80%;
+	margin: 100px auto;
+
+}
+article section
+{
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+article .sec-art1
+{
+	flex-grow: 1;
+
+}
+article .sec-art2
+{
+	flex-grow: 1;
+}
+article .sec-art3
+{
+	flex-grow: 1;
+}
+
+section div.icons
+{
+	background: #ff000066;
+	width: 150px;
+	height: 120px;
+	text-align: center;
+	border-radius:30px;
+}
+section i
+{
+	color:white;
+	margin-top: 20px;
+}
+.h2-art
+{
+	color:white;
+
+}
+.p-art
+{
+	color:white;
+}
+
+
+/* Aside */
+
+
+aside
+{
+	grid-area:aside;
+	
+}
+aside a
+{
+	cursor: pointer;
+}
+aside label
+{
+	font-size: 20px
+}
+aside i
+{
+	color:white;
+}
+aside #containerForm
+{
+	width:100%;
+	height: 300px;
+	background: #222;
+	border-top-left-radius: 30px;
+	box-shadow: -2px -5px 10px #430a00;
+	transition: all 2s ease
+}
+aside .hidden
+{
+	opacity: 0
+
+}
+input[type=text],input[type=email], textarea
+{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+	margin: 10px auto;
+	margin-left: 30px;
+	border-radius: 10px
+}
+label
+{
+	color:white;
+	margin-left: 20px
+}
+input[type=submit]
+{
+	width: 70px;
+	margin-left: 30px;
+	color:white;
+	background: #333;
+	border-radius: 10px
+}
+
+
+footer
+{
+	grid-area:footer;
+	margin-top: 200px;
+	background: #000;
+	color:white;
+	font-size: 1.2em;
+	text-align: center;
+}
+footer p
+{
+	justify-content: center;
+}
